@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIMM STORE - Jasa Joki & Editing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #cfe9ff, #eaf6ff);
+      color: #1f3c88;
+      overflow-x: hidden;
+    }.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(120, 180, 255, 0.7);
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 36px rgba(120, 180, 255, 1);
+}
+
+.card h3 { text-align:center; }
+
+.logo {
+
+width: 130px; height: 130px; border-radius: 50%; background: linear-gradient(135deg, #9fd3ff, #cfe9ff); margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 28px rgba(120,180,255,1); overflow: hidden; }
+
+.logo-img{ width:100%; height:100%; object-fit:cover; border-radius:50%; }
+
+@keyframes spinGlow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+.cta {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #9fd3ff, #cfe9ff);
+  color: #1f3c88;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0 22px rgba(120,180,255,1);
+  transition: 0.2s ease;
+}
+
+.cta:hover { transform: scale(1.1); }
+
+.pulse {
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 15px rgba(120,180,255,0.7); }
+  50% { box-shadow: 0 0 40px rgba(120,180,255,1); }
+  100% { box-shadow: 0 0 15px rgba(120,180,255,0.7); }
+}
+
+input, select, textarea {
+  background: rgba(255,255,255,0.8);
+  color: #1f3c88;
+  border-radius: 14px;
+  border: none;
+  padding: 12px;
+}
+
+/* bubble animation */
+.bubbles span{
+  position: fixed;
+  bottom: -50px;
+  background: rgba(180,220,255,0.6);
+  border-radius: 50%;
+  animation: rise 12s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rise {
+  0% { transform: translateY(0) scale(1); opacity:1; }
+  100% { transform: translateY(-110vh) scale(1.4); opacity:0; }
+}
+
+/* sparkle */
+.sparkle{
+  position: fixed;
+  inset:0;
+  pointer-events:none;
+  background-image: radial-gradient(#ffffff55 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: sparkleMove 20s linear infinite;
+  z-index:0;
+}
+
+@keyframes sparkleMove{
+  from{ background-position:0 0; }
+  to{ background-position:400px 400px; }
+}
+
+.float-wa{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: linear-gradient(135deg,#9fd3ff,#cfe9ff);
+  padding: 14px 18px;
+  border-radius: 999px;
+  font-weight:700;
+  color:#1f3c88;
+  text-decoration:none;
+  box-shadow:0 0 25px rgba(120,180,255,1);
+  animation: pulse 1.5s infinite;
+  z-index:99;
+}
+
+  </style>
+</head>
+<body>
+  <div class="sparkle"></div>
+  <div class="bubbles">
+    <span style="left:5%; width:12px; height:12px; animation-delay:0s"></span>
+    <span style="left:15%; width:18px; height:18px; animation-delay:2s"></span>
+    <span style="left:30%; width:10px; height:10px; animation-delay:4s"></span>
+    <span style="left:45%; width:20px; height:20px; animation-delay:1s"></span>
+    <span style="left:60%; width:14px; height:14px; animation-delay:3s"></span>
+    <span style="left:75%; width:22px; height:22px; animation-delay:5s"></span>
+    <span style="left:90%; width:16px; height:16px; animation-delay:2.5s"></span>
+  </div>
+  <a href="https://wa.me/6285183430496" target="_blank" class="float-wa">💬 Chat</a>
+  <div class="bubbles">
+    <span style="left:5%; width:12px; height:12px; animation-delay:0s"></span>
+    <span style="left:15%; width:18px; height:18px; animation-delay:2s"></span>
+    <span style="left:30%; width:10px; height:10px; animation-delay:4s"></span>
+    <span style="left:45%; width:20px; height:20px; animation-delay:1s"></span>
+    <span style="left:60%; width:14px; height:14px; animation-delay:3s"></span>
+    <span style="left:75%; width:22px; height:22px; animation-delay:5s"></span>
+    <span style="left:90%; width:16px; height:16px; animation-delay:2.5s"></span>
+  </div>
+  <div class="container">
+    <header>
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <img src="logo-kimm-store.png" alt="KIMM STORE" style="width:130px;height:130px;border-radius:50%;box-shadow:0 0 28px rgba(120,180,255,1);margin-bottom:12px;">
+        <h1>JASA JOKI TUGAS · EDITING · CANVA</h1>
+        <p style="text-align:center;">Amanah · Murah · Best</p>
+      </div>
+    </header><div class="grid">
+  <div class="card">
+    <h3>JOKI TUGAS (KETIK)</h3>
+    <div class="list">
+      SMP: 1.500 / hal<br />
+      SMA: 2.500 / hal<br />
+      Kuliah: 6.000 / hal
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>EDITING VIDEO</h3>
+    <div class="list">
+      Ringan: 2.500<br />
+      Sedang (JJ, dll): 5.000<br />
+      Sulit: 15.000
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>CANVA</h3>
+    <div class="list">
+      Presentasi: 1.000 / slide<br />
+      Poster: mulai 4.000<br />
+      (tergantung difficulty)
+    </div>
+  </div>
+
+  <h3>Minat? Chat:</h3>
+  <a class="cta pulse" style="display:inline-flex;align-items:center;justify-content:center;" href="https://wa.me/6285183430496" target="_blank">💬 Chat WhatsApp Sekarang</a>  <div style="margin-top:32px; text-align:left;">
+    <h3 style="text-align:center;">FORM ORDER OTOMATIS</h3>
+    <form id="orderForm" class="card" style="max-width:500px; margin:16px auto 0;">
+      <div class="list">
+        <label>Nama</label><br>
+        <input type="text" id="nama" required style="width:100%;padding:10px;border-radius:10px;border:none;margin-bottom:10px;"><label>Jenis Layanan</label><br>
+    <select id="layanan" required style="width:100%;padding:10px;border-radius:10px;border:none;margin-bottom:10px;">
+      <option value="">-- Pilih Layanan --</option>
+      <option value="Joki Tugas">Joki Tugas</option>
+      <option value="Editing Video">Editing Video</option>
+      <option value="Desain Canva">Desain Canva</option>
+    </select>
+
+    <label>Detail Pesanan</label><br>
+    <textarea id="detail" rows="4" required style="width:100%;padding:10px;border-radius:10px;border:none;margin-bottom:14px;"></textarea>
+
+    <button type="submit" class="cta" style="width:100%; border:none; cursor:pointer;">Kirim via WhatsApp</button>
+  </div>
+</form>
+
+  </div>
+</footer>
+  </div>  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nama = document.getElementById('nama').value;
+      const layanan = document.getElementById('layanan').value;
+      const detail = document.getElementById('detail').value;
+
+      const pesan = `Halo, saya mau order%0A%0ANama: ${nama}%0ALayanan: ${layanan}%0ADetail: ${detail}`;
+      const nomor = '6285183430496';
+
+      window.open(`https://wa.me/${nomor}?text=${pesan}`, '_blank');
+    });
+  </script></body>
+</html>
+</body>
+</html>
