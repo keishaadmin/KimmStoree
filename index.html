@@ -1,5 +1,18 @@
 <!DOCTYPE html><html lang="id">
 <head>
+  
+  <style>
+.badge-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.badge {
+  text-align: center;
+}
+</style>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KIMM STORE - Jasa Joki & Editing</title>
@@ -206,6 +219,10 @@ input, select, textarea {
     </div>
   </div>
 
+        <div class="badge">AMANAH · MURAH · BEST</div>
+      </div>
+    </div><footer style="text-align:center;">
+
   <h3>Minat? Chat:</h3>
   <a class="cta pulse" style="display:inline-flex;align-items:center;justify-content:center;" href="https://wa.me/6285183430496" target="_blank">💬 Chat WhatsApp Sekarang</a>  <div style="margin-top:32px; text-align:left;">
     <h3 style="text-align:center;">FORM ORDER OTOMATIS</h3>
@@ -230,19 +247,17 @@ input, select, textarea {
   </div>
 </footer>
   </div>  <script>
-    document.getElementById('orderForm').addEventListener('submit', function(e) {
-      e.preventDefault();
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-      const nama = document.getElementById('nama').value;
-      const layanan = document.getElementById('layanan').value;
-      const detail = document.getElementById('detail').value;
+    const nama = document.getElementById('nama').value;
+    const layanan = document.getElementById('layanan').value;
+    const detail = document.getElementById('detail').value;
 
-      const pesan = `Halo, saya mau order%0A%0ANama: ${nama}%0ALayanan: ${layanan}%0ADetail: ${detail}`;
-      const nomor = '6285183430496';
+    const pesan = `Halo, saya mau order%0A%0ANama: ${nama}%0ALayanan: ${layanan}%0ADetail: ${detail}`;
+    const nomor = '6285183430496';
 
-      window.open(`https://wa.me/${nomor}?text=${pesan}`, '_blank');
-    });
-  </script></body>
-</html>
-</body>
-</html>
+    window.open(`https://wa.me/${nomor}?text=${pesan}`, '_blank');
+  });
+</script><script src="promo.js"></script><script src="fake-order.js"></script></body>
+      </html>
